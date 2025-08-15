@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Libros | PublicaLibros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">📚 PublicaLibros</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+        <li class="nav-item"><a class="nav-link active" href="libros.html">Libros</a></li>
+        <li class="nav-item"><a class="nav-link" href="creditos.html">Créditos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CONTENIDO -->
+<main class="container my-5">
+  <header class="text-center mb-4">
+    <h1 class="fw-bold">Catálogo de Libros</h1>
+    <p class="lead">Explora títulos por categoría. Todo a tu gusto.</p>
+  </header>
+
+  <!-- Pestañas -->
+  <ul class="nav nav-tabs justify-content-center" id="tabsLibros" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="todos-tab" data-bs-toggle="tab" data-bs-target="#todos" type="button" role="tab">Todos</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="novela-tab" data-bs-toggle="tab" data-bs-target="#novela" type="button" role="tab">Novela</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tec-tab" data-bs-toggle="tab" data-bs-target="#tecnologia" type="button" role="tab">Tecnología</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="inf-tab" data-bs-toggle="tab" data-bs-target="#infantil" type="button" role="tab">Infantil</button>
+    </li>
+  </ul>
+
+  <div class="tab-content pt-4" id="tabsLibrosContent">
+    <!-- TODOS -->
+    <div class="tab-pane fade show active" id="todos" role="tabpanel" aria-labelledby="todos-tab">
+      <div class="row g-4">
+        <!-- Card -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/260?random=201" class="card-img-top" alt="Portada El Viaje">
+            <div class="card-body">
+              <h5 class="card-title mb-1">El Viaje</h5>
+              <p class="text-muted small mb-2">Novela</p>
+              <p class="card-text">Aventura y autodescubrimiento en un relato breve.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/260?random=202" class="card-img-top" alt="Portada Web Fácil">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Web Fácil</h5>
+              <p class="text-muted small mb-2">Tecnología</p>
+              <p class="card-text">HTML5 y Bootstrap explicados con ejemplos simples.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/260?random=203" class="card-img-top" alt="Portada Cuentos de Luna">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Cuentos de Luna</h5>
+              <p class="text-muted small mb-2">Infantil</p>
+              <p class="card-text">Historias cortas para leer antes de dormir.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/260?random=204" class="card-img-top" alt="Portada Patrones UI">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Patrones UI</h5>
+              <p class="text-muted small mb-2">Tecnología</p>
+              <p class="card-text">Ideas prácticas para diseñar interfaces claras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NOVELA -->
+    <div class="tab-pane fade" id="novela" role="tabpanel" aria-labelledby="novela-tab">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/260?random=211" class="card-img-top" alt="Novela El Viaje">
+            <div class="card-body">
+              <h5 class="card-title mb-1">El Viaje</h5>
+              <p class="card-text">Un camino lleno de giros y decisiones.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/260?random=212" class="card-img-top" alt="Novela Horizonte">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Horizonte</h5>
+              <p class="card-text">Drama contemporáneo sobre segundas oportunidades.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TECNOLOGÍA -->
+    <div class="tab-pane fade" id="tecnologia" role="tabpanel" aria-labelledby="tec-tab">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/260?random=221" class="card-img-top" alt="Tecnología Web Fácil">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Web Fácil</h5>
+              <p class="card-text">Guía rápida de HTML5 y Bootstrap.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/260?random=222" class="card-img-top" alt="Tecnología Patrones UI">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Patrones UI</h5>
+              <p class="card-text">Buenas prácticas para interfaces limpias.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFANTIL -->
+    <div class="tab-pane fade" id="infantil" role="tabpanel" aria-labelledby="inf-tab">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/260?random=231" class="card-img-top" alt="Infantil Cuentos de Luna">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Cuentos de Luna</h5>
+              <p class="card-text">Relatos cortos para peques curiosos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/260?random=232" class="card-img-top" alt="Infantil Aventuras Mini">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Aventuras Mini</h5>
+              <p class="card-text">Pequeñas historias con grandes ideas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- /tab-content -->
+</main>
+
+<!-- FOOTER -->
+<footer class="py-3 bg-dark text-white text-center">    
+  <small>© 2025 PublicaLibros — </small>
+  <small>© 2025 Soluciones Castillo</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
